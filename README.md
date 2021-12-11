@@ -20,7 +20,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ### The challenge
 
 - Use of CSS Flexbox
-- Use of CSS Grid
 
 Users should be able to:
 
@@ -33,14 +32,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AGutierrezR/single-price-grid-component)
-- Live Site URL: [Live Site](https://agutierrezr.github.io/single-price-grid-component/)
+- Solution URL: [Solution](https://github.com/AGutierrezR/NFT-preview-card-component)
+- Live Site URL: [Live Site](https://agutierrezr.github.io/NFT-preview-card-component/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- CSS Grid
 - CSS Flexbox
 - Mobile-first workflow
 - [Sass](https://sass-lang.com/) - For styles
@@ -52,7 +50,6 @@ Users should be able to:
 ### Useful resources
 
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me with the layout.
-- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me with the layout.
 
 ## Author
 
