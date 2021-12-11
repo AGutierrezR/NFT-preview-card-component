@@ -1,0 +1,107 @@
+@use "../abstracts/" as *;
+
+.cryptocurrency-card {
+  width: 100%;
+  max-width: 327px;
+  padding: 24px;
+  color: var(--clr-soft-blue);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--clr-dark-blue-card);
+
+  &__preview {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__title {
+    color: var(--clr-white);
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+  }
+
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    color: var(--clr-cyan);
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: -0.4px;
+
+    &:before {
+      content: url(../images/icon-ethereum.svg);
+      line-height: 0;
+      margin-right: 6px;
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: url(../images/icon-clock.svg);
+      line-height: 0;
+      margin-right: 6px;
+    }
+  }
+
+  &__divider {
+    margin: 12px 0 16px;
+    border-width: 0 0 2px 0;
+    border-color: var(--clr-dark-blue-line);
+  }
+
+  &__creator {
+    display: flex;
+    align-items: center;
+    font-weight: var(--fw-light);
+    letter-spacing: -0.4px;
+  }
+
+  &__avatar {
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  &__creator-name {
+    color: var(--clr-white);
+  }
+
+  @include media-breakpoint("desktop") {
+    max-width: 350px;
+    padding-bottom: 32px;
+    border-radius: 16px;
+
+    &__title {
+      font-weight: var(--fw-regular);
+      margin-bottom: 12px;
+    }
+
+    &__desc {
+      letter-spacing: 0;
+      margin-bottom: 20px;
+    }
+
+    &__price {
+      font-weight: var(--fw-regular);
+    }
+
+    &__divider {
+      margin-top: 20px;
+    }
+  }
+}

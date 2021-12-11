@@ -10,7 +10,7 @@ const scssTask = () => {
   return src("./scss/main.scss", { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
-    .pipe(rename("style.css"))
+    .pipe(rename("styles.css"))
     .pipe(dest("css"))
     .pipe(cssnano())
     .pipe(rename({ suffix: ".min" }))

@@ -1,0 +1,33 @@
+$font-stack: (
+  heading: (
+    "Outfit",
+    sans-serif,
+  ),
+  body: (
+    "Outfit",
+    sans-serif,
+  ),
+);
+
+$type-scale: (
+  mobile: (
+    heading1: 1.4rem,
+    body: 1.025rem,
+  ),
+  desktop: (
+    heading1: 1.45rem,
+    body: 1.125rem,
+  ),
+);
+
+$type-weight: (
+  thin: 100,
+  extra-light: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+  black: 900,
+);

@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+body {
+  position: relative;
+  background-color: var(--clr-dark-blue-main);
+}

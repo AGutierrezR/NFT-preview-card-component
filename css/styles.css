@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --clr-soft-blue: #8bacda;
+  --clr-cyan: #00fff7;
+  --clr-dark-blue-main: #0d192b;
+  --clr-dark-blue-card: #14253d;
+  --clr-dark-blue-line: #2f415b;
+  --clr-white: white;
+  /* Fonts Families */
+  --ff-heading: "Outfit", sans-serif;
+  --ff-body: "Outfit", sans-serif;
+  /* Fonts Sizes */
+  --fs-heading1: 1.4rem;
+  --fs-body: 1.025rem;
+  /* Fonts Weight */
+  --fw-thin: 100;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+}
+@media only screen and (min-width: 1440px) {
+  :root {
+    --fs-heading1: 1.45rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+body {
+  position: relative;
+  background-color: var(--clr-dark-blue-main);
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--clr-white);
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
+h1,
+h2 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+}
+
+h1 {
+  font-size: var(--fs-heading1);
+}
+
+.site {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn {
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.75em;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+}
+
+.attribution {
+  height: 20px;
+  font-size: 0.6875rem;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: #fff;
+}
+
+.cryptocurrency-card {
+  width: 100%;
+  max-width: 327px;
+  padding: 24px;
+  color: var(--clr-soft-blue);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--clr-dark-blue-card);
+}
+.cryptocurrency-card__preview {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.cryptocurrency-card__image {
+  display: block;
+}
+.cryptocurrency-card__title {
+  color: var(--clr-white);
+}
+.cryptocurrency-card__desc {
+  margin-bottom: 16px;
+}
+.cryptocurrency-card__detail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cryptocurrency-card__price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--clr-cyan);
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: -0.4px;
+}
+.cryptocurrency-card__price:before {
+  content: url(../images/icon-ethereum.svg);
+  line-height: 0;
+  margin-right: 6px;
+}
+.cryptocurrency-card__date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cryptocurrency-card__date:before {
+  content: url(../images/icon-clock.svg);
+  line-height: 0;
+  margin-right: 6px;
+}
+.cryptocurrency-card__divider {
+  margin: 12px 0 16px;
+  border-width: 0 0 2px 0;
+  border-color: var(--clr-dark-blue-line);
+}
+.cryptocurrency-card__creator {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: var(--fw-light);
+  letter-spacing: -0.4px;
+}
+.cryptocurrency-card__avatar {
+  border: 1px solid var(--clr-white);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.cryptocurrency-card__creator-name {
+  color: var(--clr-white);
+}
+@media only screen and (min-width: 1440px) {
+  .cryptocurrency-card {
+    max-width: 350px;
+    padding-bottom: 32px;
+    border-radius: 16px;
+  }
+  .cryptocurrency-card__title {
+    font-weight: var(--fw-regular);
+    margin-bottom: 12px;
+  }
+  .cryptocurrency-card__desc {
+    letter-spacing: 0;
+    margin-bottom: 20px;
+  }
+  .cryptocurrency-card__price {
+    font-weight: var(--fw-regular);
+  }
+  .cryptocurrency-card__divider {
+    margin-top: 20px;
+  }
+}
