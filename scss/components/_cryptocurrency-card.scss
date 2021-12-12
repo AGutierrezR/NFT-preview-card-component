@@ -60,7 +60,7 @@
 
   &__divider {
     margin: 12px 0 16px;
-    border-width: 0 0 2px 0;
+    border-width: 0 0 1px 0;
     border-color: var(--clr-dark-blue-line);
   }
 
@@ -88,7 +88,8 @@
     border-radius: 16px;
 
     &__title {
-      font-weight: var(--fw-regular);
+      font-weight: var(--fw-semi-bold);
+      letter-spacing: 0.1px;
       margin-bottom: 12px;
     }
 
@@ -97,12 +98,23 @@
       margin-bottom: 20px;
     }
 
+    &__detail {
+      font-size: 16px;
+      letter-spacing: 0.3px;
+    }
+
     &__price {
-      font-weight: var(--fw-regular);
+      font-weight: var(--fw-semi-bold);
+      letter-spacing: inherit;
     }
 
     &__divider {
-      margin-top: 20px;
+      margin-top: 22px;
+    }
+
+    &__creator {
+      font-size: 16px;
+      letter-spacing: 0.00625em;
     }
   }
 }
