@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+body {
+  @apply flex justify-center items-center h-[100vh] bg-blue-700 tracking-tight;
+}
+
+@tailwind utilities;
+
+

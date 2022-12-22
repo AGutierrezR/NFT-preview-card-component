@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,27 +12,55 @@
     />
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+    <div
+      class="max-w-[327px] bg-blue-600 mx-auto rounded-xl p-6 text-blue-300 shadow"
+    >
+      <img class="rounded-lg mb-6" src="images/image-equilibrium.jpg" alt="" />
+      <h1 class="text-white font-semibold text-xl mb-3">Equilibrium #3429</h1>
+      <p class="text-base mb-4">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
 
-    <div class="attribution">
+      <div class="flex justify-between text-base">
+        <div class="text-cyan font-semibold flex items-center tracking-tighter">
+          <img class="mr-[6px]" src="images/icon-ethereum.svg" alt="#" /> 0.041
+          ETH
+        </div>
+        <div class="flex items-center">
+          <img class="mr-[6px]" src="images/icon-clock.svg" alt="#" /> 3 days
+          left
+        </div>
+      </div>
+
+      <hr class="border-blue-500 mt-3 mb-4" />
+
+      <footer class="font-light flex items-center">
+        <img
+          class="w-[32px] mr-4 rounded-full border-white border"
+          src="./images/image-avatar.png"
+          alt=""
+        />
+        <p>Creation of <span class="text-white">Jules Wyvern</span></p>
+      </footer>
+    </div>
+
+    <div
+      class="h-[20px] text-center text-white w-screen fixed bottom-0 left-1/2 text-sm -translate-x-1/2"
+    >
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="underline"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a class="underline" href="https://github.com/AGutierrezR"
+        >Andres Gutierrez</a
+      >.
     </div>
   </body>
 </html>
