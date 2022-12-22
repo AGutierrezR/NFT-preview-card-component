@@ -6,10 +6,12 @@ module.exports = {
       colors: {
         cyan: 'hsl(178, 100%, 50%)',
         white: 'hsl(0, 0%, 100%)',
-        'blue-300': 'hsl(215, 51%, 70%)',
-        'blue-500': 'hsl(215, 32%, 27%)',
-        'blue-600': 'hsl(216, 50%, 16%)',
-        'blue-700': 'hsl(217, 54%, 11%)',
+        blue: {
+          300: 'hsl(215, 51%, 70%)',
+          500: 'hsl(215, 32%, 27%)',
+          600: 'hsl(216, 50%, 16%)',
+          700: 'hsl(217, 54%, 11%)',
+        },
       },
       fontFamily: {
         sans: ['Outfit', 'sans-serif'],
@@ -21,12 +23,11 @@ module.exports = {
       },
       letterSpacing: {
         tighter: '-.025rem',
-        tight: '-.0125rem'
+        tight: '-.0125rem',
       },
       boxShadow: {
         DEFAULT: '0 5.9px 7.9px rgb(0 0 0 / 12%), 0 47px 63px rgb(0 0 0 / 24%)',
-        md: '0 5.9px 7.9px rgb(0 0 0 / 12%), 0 47px 63px rgb(0 0 0 / 24%)'
-      }
+      },
     },
   },
   plugins: [],
