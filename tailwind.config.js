@@ -19,7 +19,6 @@ module.exports = {
       fontSize: {
         sm: '0.6875rem',
         base: '1.025rem',
-        xl: '1.4rem',
       },
       letterSpacing: {
         tighter: '-.025rem',
