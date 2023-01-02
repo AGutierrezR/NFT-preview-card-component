@@ -18,7 +18,8 @@ module.exports = {
       },
       fontSize: {
         sm: '0.6875rem',
-        base: '1.025rem',
+        base: 'var(--fs-400)',
+        xl: 'var(--fs-600)'
       },
       letterSpacing: {
         tighter: '-.025rem',
