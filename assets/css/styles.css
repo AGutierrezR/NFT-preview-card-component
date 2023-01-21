@@ -499,6 +499,18 @@ body{
 .fixed{
   position: fixed;
 }
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.top-0{
+  top: 0px;
+}
+.left-0{
+  left: 0px;
+}
 .bottom-0{
   bottom: 0px;
 }
@@ -530,8 +542,14 @@ body{
 .flex{
   display: flex;
 }
+.h-0{
+  height: 0px;
+}
 .h-\[20px\]{
   height: 20px;
+}
+.w-full{
+  width: 100%;
 }
 .w-\[32px\]{
   width: 32px;
@@ -546,8 +564,14 @@ body{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.flex-col{
+  flex-direction: column;
+}
 .items-center{
   align-items: center;
+}
+.justify-center{
+  justify-content: center;
 }
 .justify-between{
   justify-content: space-between;
@@ -575,6 +599,22 @@ body{
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: hsl(216 50% 16% / var(--tw-bg-opacity));
+}
+.bg-cyan{
+  --tw-bg-opacity: 1;
+  background-color: hsl(178 100% 50% / var(--tw-bg-opacity));
+}
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
+}
+.bg-\[url\(\'\.\.\/\.\.\/images\/icon-view\.svg\'\)\]{
+  background-image: url('../../images/icon-view.svg');
+}
+.bg-center{
+  background-position: center;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 .p-6{
   padding: 1.5rem;
@@ -618,11 +658,36 @@ body{
 .underline{
   text-decoration-line: underline;
 }
+.opacity-0{
+  opacity: 0;
+}
 .shadow{
   --tw-shadow: 0 5.9px 7.9px rgb(0 0 0 / 12%), 0 47px 63px rgb(0 0 0 / 24%);
   --tw-shadow-colored: 0 5.9px 7.9px var(--tw-shadow-color), 0 47px 63px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
+.hover\:rounded-lg:hover{
+  border-radius: 0.5rem;
+}
+
+.hover\:text-cyan:hover{
+  --tw-text-opacity: 1;
+  color: hsl(178 100% 50% / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:h-full{
+  height: 100%;
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
+}
+
 @media (min-width: 1024px){
 
   .lg\:mb-5{

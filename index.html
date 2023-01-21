@@ -20,12 +20,17 @@
       <div
         class="mx-auto max-w-[327px] rounded-xl bg-blue-600 p-6 text-blue-300 shadow lg:max-w-[350px] lg:pb-8"
       >
-        <img
-          class="mb-6 rounded-lg"
-          src="images/image-equilibrium.jpg"
-          alt=""
-        />
-        <h1 class="mb-3 text-xl font-semibold text-white lg:tracking-[0.1px]">
+        <div class="group relative mb-6">
+          <img class="rounded-lg" src="images/image-equilibrium.jpg" alt="" />
+          <a href="#" aria-label="link to equilibrium">
+            <div
+              class="absolute top-0 left-0 flex h-0 w-full flex-col items-center justify-center bg-cyan bg-opacity-50 bg-[url('../../images/icon-view.svg')] bg-center bg-no-repeat opacity-0 hover:cursor-pointer hover:rounded-lg group-hover:h-full group-hover:opacity-100"
+            ></div>
+          </a>
+        </div>
+        <h1
+          class="mb-3 text-xl font-semibold text-white hover:cursor-pointer hover:text-cyan lg:tracking-[0.1px]"
+        >
           Equilibrium #3429
         </h1>
         <p class="mb-4 text-base lg:mb-5 lg:tracking-normal">
@@ -53,7 +58,10 @@
             alt=""
           />
           <p class="lg:tracking-[0.00625em]">
-            Creation of <span class="text-white">Jules Wyvern</span>
+            Creation of
+            <span class="text-white hover:cursor-pointer hover:text-cyan"
+              >Jules Wyvern</span
+            >
           </p>
         </footer>
       </div>
