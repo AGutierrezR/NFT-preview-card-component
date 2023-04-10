@@ -548,6 +548,9 @@ body{
 .h-\[20px\]{
   height: 20px;
 }
+.h-full{
+  height: 100%;
+}
 .w-full{
   width: 100%;
 }
@@ -676,6 +679,16 @@ body{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-\[all\]{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-700{
   transition-duration: 700ms;
 }
@@ -691,6 +704,10 @@ body{
 .hover\:text-cyan:hover{
   --tw-text-opacity: 1;
   color: hsl(178 100% 50% / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover{
+  opacity: 1;
 }
 
 .group:hover .group-hover\:h-full{
